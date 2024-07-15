@@ -20,12 +20,12 @@ pipeline {
             }
         }
 
-        stage ('Integration Test') {
+        stage ('Build') {
 
             steps {
 
-              sh 'mvn verify -DskipTests'
-              
+              sh 'mvn clean install'
+
             }
         }
     }
