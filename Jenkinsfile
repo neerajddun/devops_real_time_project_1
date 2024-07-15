@@ -16,7 +16,7 @@ pipeline {
 
             steps {
 
-               git 'mvn test'
+              sh 'mvn test'
             }
         }
     }
